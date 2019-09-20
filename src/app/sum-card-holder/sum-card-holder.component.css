@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  border: 3px solid yellow;
+  height: 90vh;
+  width: 98vw;
+  background-color: grey;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper p {
+  font-family: Verdana;
+  font-size: 11px;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.cardswrapper {
+  justify-content: center;
+}
