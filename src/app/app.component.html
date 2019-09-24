@@ -1,24 +1,22 @@
-<main class="container">
-  <header>
-    <h1>Welcome to Vehicle Maintenance App!</h1>
-  </header>
-  <!-- <nav>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav> -->
-  <router-outlet></router-outlet>
-  <!-- Dynamic content here! -->
-  <footer>
-    <span class="badge badge-pill badge-primary"
-      >Developed with pride & 🤓 + ❤️</span
-    >
-    <span class="badge badge-pill badge-success">By G.F.M-M</span>
-    <a href="https://github.com/G-Fidalgo">Visit my GitHub profile 🙈🙉🙊</a>
-    <div class="spinner-border" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </footer>
+<nav class="navbar navbar-light bg-light">
+  <div>
+    <i class="material-icons lucky-point">
+      emoji_transportation
+    </i>
+  </div>
+  <div class="center">
+    <a class="navbar-brand" [routerLink]="['/']">Vahicle Maintenance App!</a>
+  </div>
+</nav>
+<main>
+  <div class="wrap">
+    <router-outlet></router-outlet>
+  </div>
 </main>
+<footer>
+  <span class="badge badge-pill badge-primary"
+    >Developed with pride & 🤓 + ❤️</span
+  >
+  <span class="badge badge-pill badge-success">By G.F.M-M</span>
+  <a href="https://github.com/G-Fidalgo">Visit my GitHub profile 🙈🙉🙊</a>
+</footer>
