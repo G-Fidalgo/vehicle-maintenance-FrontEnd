@@ -1,8 +1,10 @@
 <div class="wrapper">
   <p>This is the Summary Card Holder!</p>
   <div class="cardswrapper">
-    <app-sum-card></app-sum-card>
-    <app-sum-card></app-sum-card>
+    <app-sum-card
+      *ngFor="let sumCard of sumCardList"
+      [sumCard]="sumCard"
+    ></app-sum-card>
   </div>
   <p>Here the Summary Card Holder ends!!</p>
 </div>

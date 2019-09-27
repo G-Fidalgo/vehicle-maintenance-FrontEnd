@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
+import { VehiclesService } from "../Services/vehicles.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-sum-card',
-  templateUrl: './sum-card.component.html',
-  styleUrls: ['./sum-card.component.css']
+  selector: "app-sum-card",
+  templateUrl: "./sum-card.component.html",
+  styleUrls: ["./sum-card.component.css"]
 })
 export class SumCardComponent implements OnInit {
+  @Input() sumCard: any;
 
-  constructor() { }
+  constructor(
+    private vehicleService: VehiclesService,
+    private router: Router
+  ) {}
 
-  ngOnInit() {
+  redirect() {
+    this.router.navigate(["/vehicle", this.sumCard.id]);
   }
 
+  ngOnInit() {
+    console.log(this.sumCard);
+  }
 }

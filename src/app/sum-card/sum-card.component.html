@@ -1,4 +1,6 @@
-<div class="wrapper">
-  <p>Brand: Nombre de la marca del coche que he obtenido de mi back</p>
-  <p>Brand: Nombre de la marca del coche que he obtenido de mi back</p>
+<div class="wrapper" (click)="redirect()">
+  <p>Propietario : {{ sumCard.propietario.nombre }}</p>
+  <p>{{ sumCard.vehiculo.informacion.marca }}</p>
+  <p>{{ sumCard.vehiculo.informacion.modelo }}</p>
+  <p>{{ sumCard.vehiculo.informacion.caja }}</p>
 </div>
